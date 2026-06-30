@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Your Own Mart</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Your Own Mart</h1>
+
+<input
+type="text"
+id="search"
+placeholder="Search by Product Code or Category..."
+onkeyup="searchProduct()">
+
+<a href="cart.html" class="cart-btn">🛒 Cart</a>
+
+</header>
+
+<div class="categories">
+
+<button onclick="filterCategory('all')">All</button>
+
+<button onclick="filterCategory('women dress')">Women's Dress</button>
+
+<button onclick="filterCategory('men dress')">Men's Dress</button>
+
+<button onclick="filterCategory('perfume')">Perfume</button>
+
+</div>
+
+<div id="productList" class="products">
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
